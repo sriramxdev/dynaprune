@@ -1,0 +1,20 @@
+[package]
+name = "dynaprune"
+version = "0.1.0-alpha.1"
+edition = "2024"
+authors = ["Sri Ram Sharma <193415805+sriramxdev@users.noreply.github.com>"]
+license = "MIT OR Apache-2.0"
+description = "A high-performance dynamic kinematic frame pruning engine built in Rust."
+repository = "https://github.com/sriramxdev/dynaprune"
+readme = "README.md"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"], optional = true }
+rayon = "1.8"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "prune_benchmark"
+harness = false
